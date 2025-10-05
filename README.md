@@ -36,28 +36,13 @@ Sistema de nómina empresarial que permite gestionar diferentes tipos de emplead
 - **Paradigma:** Programación Orientada a Objetos (POO)
 
 ## 📁 Estructura del Proyecto
-payroll-system/
-│
-├── src/
-│   ├── models/                      # Modelos de dominio
-│   │   ├── Employee.java           # Clase abstracta base
-│   │   ├── SalariedEmployee.java   # Empleado asalariado
-│   │   ├── HourlyEmployee.java     # Empleado por horas
-│   │   ├── CommissionEmployee.java # Empleado por comisión
-│   │   └── TemporaryEmployee.java  # Empleado temporal
-│   │
-│   ├── services/                    # Lógica de negocio
-│   │   ├── PayrollCalculator.java  # Calculadora principal
-│   │   ├── DeductionCalculator.java # Cálculo de deducciones
-│   │   ├── BenefitCalculator.java  # Cálculo de beneficios
-│   │   └── PayrollReport.java      # Generador de reportes
-│   │
-│   ├── interfaces/                  # Contratos
-│   │   └── IPayrollCalculator.java # Interface principal
-│   │
-│   └── PayrollSystemApp.java       # Aplicación principal
-│
-└── README.md                        # Documentación
+El proyecto se organiza dentro del directorio payroll-system, que contiene una carpeta principal llamada src, donde se encuentra todo el código fuente. Dentro de esta carpeta hay tres subdirectorios principales: models, services e interfaces.
+
+En models se ubican los modelos de dominio, incluyendo la clase abstracta base Employee.java y las clases derivadas SalariedEmployee.java (empleado asalariado), HourlyEmployee.java (empleado por horas), CommissionEmployee.java (empleado por comisión) y TemporaryEmployee.java (empleado temporal).
+
+El directorio services contiene la lógica de negocio, conformada por PayrollCalculator.java (calculadora principal), DeductionCalculator.java (cálculo de deducciones), BenefitCalculator.java (cálculo de beneficios) y PayrollReport.java (generador de reportes).
+
+En interfaces se define el contrato principal del sistema mediante IPayrollCalculator.java. Finalmente, en la raíz de src se encuentra el archivo PayrollSystemApp.java, que actúa como punto de entrada de la aplicación. Además, en la raíz del proyecto se incluye el archivo README.md con la documentación general.
 
 ## 🎯 Principios SOLID Implementados
 
